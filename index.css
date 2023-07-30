@@ -25,7 +25,7 @@ nav{
     
     /* border: 1px solid black; */
     background-color: rgb(11, 78, 133);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .logo{
@@ -92,4 +92,25 @@ nav ul li a:hover,nav ul li a:active{
     height: 30px;
     color: var(--text-white);
     margin-top: 10px;
+}
+@media screen and (max-width:546px){
+   nav{
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+   }
+    .logo{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .content{
+        background-color: rgba(0, 0, 0, 0.829);
+        color: var(--text-white);
+    }
+.btn-primary{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
 }
