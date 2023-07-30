@@ -1,6 +1,10 @@
 :root{
-
-
+--primary-color:#FF7070;
+--secondary-color:#66CCCC;
+--tertiary-color:#FFCC33;
+--text-white:rgb(248, 239, 239);
+--large-text:2rem;
+--small-text:0.9rem;
 }
 *{
     margin: 0;
@@ -12,7 +16,7 @@
     height: 100%;
     
 }
-.navbar{
+nav{
     display: flex;
     justify-content: space-between;
     /* padding: 20px; */
@@ -23,29 +27,69 @@
     background-color: rgb(11, 78, 133);
     flex-wrap: wrap;
 }
-.navbar>.nav-list{
-   list-style-type: none;
-   
-}
+
 .logo{
     margin-right: auto;
+    text-align: center;
+    margin-left: 10px;
 }
-.nav-list>.nav-list-item{
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
     display: inline-block;
-    background-color: blue; 
-    padding: 20px 20px; 
-    
+    padding: 10px 0;
+}
+nav ul li a{
+   
+    text-transform: capitalize;
+    font-size: var(--small-text);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:link,nav ul li a:visited{
+    color:var(--text-white);
+   
+    padding: 10px 20px;
    
 }
-.nav-list>.nav-list-item>.nav-link{
-color: white;
+nav ul li a:hover,nav ul li a:active{
+    color:var(--text-white);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+   
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.hero div img{
+    width: 100%;
+    padding: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content h1{
+    text-align: center;
+    padding: 10px;
 
-display: inline-block;
-text-align: center;
-text-decoration: none;
-text-transform: uppercase;
-
-
-
-
+}
+.content p{
+    text-align: justify;
+    padding: 10px;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    width: 50%;
+    border: none;
+    height: 30px;
+    color: var(--text-white);
+    margin-top: 10px;
 }
