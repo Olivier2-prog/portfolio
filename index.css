@@ -65,6 +65,7 @@ nav ul li a:hover,nav ul li a:active{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    height: 80vh;
 }
 .hero div img{
     width: 100%;
