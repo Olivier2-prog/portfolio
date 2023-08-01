@@ -3,6 +3,7 @@
 --secondary-color:#66CCCC;
 --tertiary-color:#FFCC33;
 --text-white:rgb(248, 239, 239);
+--text-dark:rgba(14, 1, 1, 0.897);
 --large-text:2rem;
 --small-text:0.9rem;
 }
@@ -25,7 +26,7 @@ nav{
     height: 20vh;
     
     /* border: 1px solid black; */
-    background-color: rgb(11, 78, 133);
+    /* background-color: rgb(11, 78, 133); */
     /* flex-wrap: wrap; */
 }
 
@@ -50,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:link,nav ul li a:visited{
-    color:var(--text-white);
+    color:var(--text-dark);
    
     padding: 10px 20px;
    
