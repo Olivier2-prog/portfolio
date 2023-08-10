@@ -137,13 +137,13 @@ background-color: var(--text-white);
 
 .main-content {
 
-  border: 2px solid;
+  /* border: 2px solid; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
-  justify-self: flex-end;
+  justify-self: center;
   width: 70%;
   align-self: center;
   justify-self: center;
@@ -152,7 +152,21 @@ background-color: var(--text-white);
   text-align: start;
   color: var(--text-white);
   padding: 2em;
+  gap: 10px;
 
+}
+.main-content-img{
+    width: 70%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+.main-content-img img{
+    width: 100%;
+    height: 80%;
+    min-width: 190px;
+    max-width: 300px;
+    border-radius: 10px;
 }
 .box-shadow{
     box-shadow: rgb(116, 161, 209) 10px 20px 50px -10px;
@@ -160,9 +174,19 @@ background-color: var(--text-white);
 .main-content .greetings h3{
 padding: .2em 0;
 }
-.main-content .greetings h3 b{
+.main-content .greetings{
+    max-width: 600px;
+    min-width:190px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 60px 10p;
+}
+.main-content .greetings {
     color: var(--tertiary-color);
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 2rem; */
     
     padding-left: .5em;
     padding-bottom: 1em;
@@ -175,7 +199,7 @@ padding: .2em 0;
         width: 80px;
         /* justify-content: center; */
         align-items: center;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
     .sidebar .logo{
         font-size: 16px;
@@ -185,7 +209,29 @@ padding: .2em 0;
     }
 .main-content{
     margin-right: 2em;
+    padding: 1em 1em;
     white-space: normal;
     text-align: justify;
+    flex-direction: column-reverse;
+    position: relative;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
 }
+.main-content-img img{
+    width: 95%;
+    height: 80%;
+    margin-right: 2em;
+    
+}
+.main-content .greetings h3{
+    padding: 0;
+    }
+    .main-content .greetings {
+        color: var(--tertiary-color);
+        font-size: 1;
+        
+        padding-left: .2em;
+        padding-bottom: 0em;
+    }
 }
