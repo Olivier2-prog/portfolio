@@ -167,7 +167,7 @@ padding: .2em 0;
     padding-left: .5em;
     padding-bottom: 1em;
 }
-@media screen,(orientation:landscape) and (max-width:600px){
+@media screen and (max-width:600px){
     .container{
       
     }
