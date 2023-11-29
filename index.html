@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home page</title>
+
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-       <h1 class="logo">This is logo</h1>
-      <!-- start of navigation  menu -->
-      <div class="navbar">
-       
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="" class="nav-link"><i class="fa fa-home" ></i><span class="d-none">Home</span> </a></li>
-          <li class="nav-list-item"><a href="" class="nav-link"><i class="fa fa-address-card" ></i><span class="d-none">About</span> </a></li>
-          <li class="nav-list-item"><a href="" class="nav-link"><i class="fa fa-address-book" ></i><span class="d-none">Contact</span> </a></li>
-          
-          <li class="nav-list-item"><a href="" class="nav-link"><i class="fa fa-rss" ></i><span class="d-none">Blog</span> </a></li>
-         
-        </ul>
-      </div>
-      <!-- end of navigation menu -->
+<div class="container">
+    <!-- hero and navbar -->
+<header class="header" id="home">
+    <!-- navigation -->
+<div class="navbar">
+    <nav class="navbar-nav" >
+        <h1 class="logo">KPM</h1>
+        <div class="nav-links" id="nav-links">
+            <ul class="list">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <li class="list-item"><a href="#home" class="nav-link">link 1</a></li>
+                <li class="list-item"><a href="#about" class="nav-link">link 2</a></li>
+                <li class="list-item"><a href="#" class="nav-link">link 3</a></li>
+                <li class="list-item"><a href="#" class="nav-link">link 4</a></li>
+                <li class="list-item"><a href="#" class="nav-link">link 5</a></li>
+            </ul>
+        </div>
+        <a href="#" class="btn">Sign Up</a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</div>
+<!-- navigation -->
 
-      <!--  social media icons -->
-      <div class="social-media">
-      
-<ul class="social-media-list">
-  <li class="social-media-list-item"><a href="" class="social-media-link"><i class="fa fa-facebook" ></i><span class="d-none">Facebook</span> </a></li>
-  <li class="social-media-list-item"><a href="" class="social-media-link"><i class="fa fa-whatsapp" ></i><span class="d-none">Whatsapp</span> </a></li>
-  <li class="social-media-list-item"><a href="" class="social-media-link"><i class="fa fa-linkedin" ></i><span class="d-none">Linked-In</span> </a></li>
-  <li class="social-media-list-item"><a href="" class="social-media-link"><i class="fa fa-envelope" ></i><span class="d-none"> G-mail</span></a></li>
-</ul>
-      </div>
-      <!-- end of social media icons -->
-    </div>
-    <!-- end of sidebar -->
-    <!-- start of main content -->
-    <div class="main-content box-shadow">
-      <div class="greetings">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum facilis perspiciatis hic eveniet, deleniti necessitatibus debitis! Officia beatae magni maiores enim exercitationem autem, nobis explicabo aliquam eaque fuga consequatur minima sit vel provident quis perspiciatis ex repudiandae consectetur nihil! Quisquam?
-       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quaerat enim consequuntur nostrum soluta magni 
-       </div>
-       <div class="main-content-img">
-        <img src="cyifuzo.jpg" alt="">
-      </div>
-      </div>
-     
-    <!-- end of main content -->
-  </div>
+<div class="hero" >
+    <h1 class="title">
+        Welcome To KPM Models
+    </h1>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur itaque facere laboriosam odit laborum <br>distinctio repellat? Nulla explicabo excepturi accusamus!
+    </p>
+</div>
+
+</header>
+
+    <!--  end of hero and navbar -->
+
+<!-- about KMP secction -->
+<section class="about" id="about">
+    <h2 class="sub-title">About us</h2>
+</section>
+
+<!-- end of about kmp -->
+
+
+</div>
+<script src="main.js">
+
+</script>
 </body>
 </html>

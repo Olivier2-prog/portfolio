@@ -1,0 +1,133 @@
+:root {
+  --dark-bg-color: #a52a2aa8;
+  --bg-light-color: #ab0d0d96;
+  --primary-color: white;
+  --secondary-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+.container {
+  background-color: var(--bg-light-color);
+  min-height: 100vh;
+}
+.container .header {
+  height: 100vh;
+  width: 100%;
+}
+.container .header .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--dark-bg-color);
+    height: 10%;
+    z-index: 200;
+}
+
+.container .header .navbar .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding:0 10px;
+
+}
+.container .header .navbar .navbar-nav .fa{
+    display: none;
+}
+.container .header .navbar .navbar-nav .fa-bars{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor:pointer;
+
+}
+.container .header .navbar .navbar-nav .fa-times{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    cursor:pointer;
+}
+.container .header .navbar .navbar-nav .logo {
+    color: var(--primary-color);
+}
+.container .header .navbar .navbar-nav .nav-links .list {
+    list-style: none;
+}
+.container .header .navbar .navbar-nav .nav-links .list .list-item {
+    float: left;
+    padding: 10px 20px;
+}
+.container .header .navbar .navbar-nav .nav-links .list .list-item .nav-link {
+    color: var(--primary-color);
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.container .header .navbar .navbar-nav .btn{
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--bg-light-color);
+    padding:10px  20px;
+    text-align: center;
+    font-size: 0.8rem;
+ 
+}
+.container .header .hero{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 20px ;
+
+}
+.container .header .title{
+    font-size: 4rem;
+    padding: 10px  0;
+}
+.container .header .text{
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+.container .about{
+   
+    height: 100vh;
+  
+    text-align: center;
+    padding:  60px  20px;
+}
+@media(max-width:800px){
+    .container .header .navbar .navbar-nav .fa{
+        display: block;
+    }
+    .container .header .navbar .navbar-nav .nav-links{
+        position: absolute;
+        background-color: var(--dark-bg-color);
+        left: -200px;
+        width:200px;
+transition: .8s;
+        top: 100%;
+        border: 1px solid var(--primary-color);
+        height: 100vh;
+    }
+    .container .header .navbar .navbar-nav .nav-links .list .list-item {
+        float: none;
+       
+    }
+    .container .header .title{
+        font-size: 2.7rem;
+    }
+    .container .header .text{
+        font-size: 1.7rem;
+        padding: 20px 0;
+    }
+    
+}
