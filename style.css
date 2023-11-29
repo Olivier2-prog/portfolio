@@ -106,7 +106,8 @@ html {
    justify-content: center;
     /* text-align: center; */
     padding: 0 20px ;
-    height: 100vh;
+    height:600px ;
+    /* border: 1px solid; */
 
 }
 .container .header .hero h3{
@@ -157,10 +158,32 @@ padding: 10px 0;
 }
 .container .about{
    
-    height: 100vh;
+    min-height: 100vh;
   
     text-align: center;
     padding:  10px  20px;
+}
+.container .about .about-row{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px
+}
+.container .about  h2{
+   margin: 30px ;
+}
+.container .about .about-row .my-image{
+  
+    width: 100%;
+}
+.container .about .about-row .my-image img{
+    width: 100%;
+    min-width: 300px;
+}
+.container .about .about-row .my-image img .other-details{
+   align-self: flex-start;   
 }
 @media(max-width:800px){
     .container .header .navbar .navbar-nav .fa{
@@ -200,4 +223,12 @@ transition: .8s;
         padding: 10px 0;
     }
     
+    .container .about .about-row{
+      flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
 }
